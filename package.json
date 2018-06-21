@@ -1,0 +1,30 @@
+{
+  "name": "ecomm-bot",
+  "version": "1.0.0",
+  "description": "Prototype of ecomm bot",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 6.1 < 9"
+  },
+  "dependencies": {
+    "@botpress/audience": "10.19.0",
+    "@botpress/builtins": "10.19.0",
+    "@botpress/channel-web": "10.19.0",
+    "@botpress/hitl": "10.19.0",
+    "@botpress/nlu": "^10.19.0",
+    "@botpress/skill-choice": "10.19.0",
+    "botpress": "10.19.0",
+    "google-gax": "^0.17.1",
+    "jsdoc-api": "^4.0.3",
+    "lodash": "^4.17.10",
+    "nodemon": "^1.17.5",
+    "yn": "^2.0.0"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "ghost-sync": "botpress ghost-sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit",
+  "license": "AGPL-3.0"
+}

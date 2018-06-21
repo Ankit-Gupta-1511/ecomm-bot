@@ -1,0 +1,123 @@
+[
+  {
+    "id": "builtin_text-pSsHWg",
+    "formData": {
+      "text": "👋, {{state.$r}}!",
+      "variations": [
+        "Hello, {{state.$r}}!",
+        "Welcome to Botpress, {{state.$r}}!"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:57:36.026Z"
+  },
+  {
+    "id": "builtin_text-AY5SSW",
+    "formData": {
+      "text": "This is the first time we speak 🤖",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:59:51.118Z"
+  },
+  {
+    "id": "builtin_text-bFsOmf",
+    "formData": {
+      "text": "Welcome again :)",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:00:37.593Z"
+  },
+  {
+    "id": "builtin_text-TtzrCV",
+    "formData": {
+      "text": "Alright, I have forgotten your name.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:06:41.963Z"
+  },
+  {
+    "id": "builtin_text-z0J9qh",
+    "formData": {
+      "text": "May I know your name please?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:08:41.241Z"
+  },
+  {
+    "id": "builtin_text-X069Le",
+    "formData": {
+      "text": "Try saying something like \"forget my name\"!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:16:53.227Z"
+  },
+  {
+    "id": "builtin_text-kKQ8C3",
+    "formData": {
+      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:17:55.317Z"
+  },
+  {
+    "id": "builtin_text-9ILku_",
+    "formData": {
+      "text": "Ok let me show you the catalog for {{state.subCategory}} {{state.baseCategory}}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-20T08:50:50.618Z"
+  },
+  {
+    "id": "builtin_text-RHqp1i",
+    "formData": {
+      "text": "Thank you for visiting....",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-20T12:29:33.123Z"
+  },
+  {
+    "id": "builtin_text-RUPo0i",
+    "formData": {
+      "text": "What do you want to see today?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-21T05:26:18.471Z"
+  },
+  {
+    "id": "builtin_text-yOjPKF",
+    "formData": {
+      "text": "This is the items available ...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-21T05:33:18.387Z"
+  },
+  {
+    "id": "builtin_text-hdJ1Hy",
+    "formData": {
+      "text": "Do you want me to show catalog?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-21T05:39:24.487Z"
+  },
+  {
+    "id": "builtin_text-f2M2dA",
+    "formData": {
+      "text": "Good bye :)",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-21T05:43:47.829Z"
+  }
+]

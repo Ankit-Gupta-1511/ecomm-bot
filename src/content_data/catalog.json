@@ -1,0 +1,41 @@
+[
+  {
+    "id": "catalog-vsIA7D",
+    "formData": {
+      "baseCategory": "watches",
+      "subCategory": "digital",
+      "products": [
+        {
+          "name": "ABC",
+          "code": "abc",
+          "description": "This is first watch",
+          "image": "https://images-na.ssl-images-amazon.com/images/I/91zS53BYa6L._UY741_.jpg"
+        },
+        {
+          "name": "CDE",
+          "code": "",
+          "description": "This is 2nd watch",
+          "image": "https://images-na.ssl-images-amazon.com/images/I/91zS53BYa6L._UY741_.jpg"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-20T09:46:26.301Z"
+  },
+  {
+    "id": "catalog-7O6ecJ",
+    "formData": {
+      "baseCategory": "watches",
+      "subCategory": "analog",
+      "products": [
+        {
+          "name": "New Watch",
+          "code": "",
+          "image": "https://images-na.ssl-images-amazon.com/images/I/91zS53BYa6L._UY741_.jpg"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-20T14:14:54.743Z"
+  }
+]

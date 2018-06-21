@@ -1,0 +1,162 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [
+      ""
+    ],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "bda0320009",
+      "name": "welcome",
+      "onEnter": [
+        "say #!builtin_text-pSsHWg",
+        "getTotalNumberOfConversations {}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "state.$r === 0",
+          "node": "first-time"
+        },
+        {
+          "condition": "state.$r > 0",
+          "node": "many-times"
+        }
+      ]
+    },
+    {
+      "id": "7099199f90",
+      "name": "first-time",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('agree')",
+          "node": "watch-flow"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hdJ1Hy"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "c69ee2d71f",
+      "name": "many-times",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('products')",
+          "node": "watch-flow"
+        },
+        {
+          "condition": "event.nlu.intent.is('forget')",
+          "node": "forget-my-name"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bFsOmf",
+        "say #!builtin_text-RUPo0i"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "4f50a2e9fd",
+      "name": "forget-my-name",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-TtzrCV",
+        "resetUserVariable {\"name\":\"nickname\"}",
+        "say #!builtin_text-kKQ8C3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a54a82eb7c",
+      "name": "entry",
+      "onEnter": [
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('bye')",
+          "node": "over"
+        },
+        {
+          "condition": "state.$r !== null",
+          "node": "welcome"
+        },
+        {
+          "condition": "true",
+          "node": "ask-name"
+        }
+      ]
+    },
+    {
+      "id": "d29fc6b771",
+      "name": "ask-name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-z0J9qh"
+      ],
+      "onReceive": [
+        "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ]
+    },
+    {
+      "id": "5fa8d0b229",
+      "name": "watch-flow",
+      "next": [
+        {
+          "condition": "always",
+          "node": "CatalogViewer"
+        }
+      ],
+      "onEnter": [
+        "say #!ecomm-choice-questions-jZ~IZR"
+      ],
+      "onReceive": [
+        "showCatalog {}"
+      ]
+    },
+    {
+      "id": "90336bb856",
+      "name": "CatalogViewer",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('bye')",
+          "node": "over"
+        },
+        {
+          "condition": "event.nlu.intent.is('forget')",
+          "node": "forget-my-name"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RHqp1i"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "bf2b55b4cb",
+      "name": "over",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-f2M2dA"
+      ],
+      "onReceive": null
+    }
+  ]
+}

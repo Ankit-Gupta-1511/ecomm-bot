@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ecomm-choice-questions-jZ~IZR",
+    "formData": {
+      "question": "What kind of watches do you prefer?",
+      "product_choices": [
+        "Digital",
+        "Analog"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-20T06:26:56.007Z"
+  }
+]

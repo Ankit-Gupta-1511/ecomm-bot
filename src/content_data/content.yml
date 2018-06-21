@@ -1,0 +1,9 @@
+carouselOfProducts:
+  - template_type: generic
+    elements:
+      {{#products}}
+      - title: {{name}}
+        image_url: "{{{image}}}"
+        buttons:
+          - <PICK_CITY_{{code}}> Pick
+      {{/products}}

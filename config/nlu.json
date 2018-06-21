@@ -1,0 +1,7 @@
+{
+  "intentsDir": "./src/intents",
+  "entitiesDir": "./src/entities",
+  "provider": "dialogflow",
+  "debugModeEnabled": false,
+  "minimumConfidence": "0.3"
+}
